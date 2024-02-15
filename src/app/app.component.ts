@@ -1,12 +1,8 @@
 import {Component, inject} from '@angular/core';
 import {RouterOutlet, RouterLink} from '@angular/router';
 import {HdWalletMultiButtonComponent} from '@heavy-duty/wallet-adapter-material';
-import {ShyftApiService} from './shyft-api-service';
 import {MatAnchor} from '@angular/material/button';
 import { DecimalPipe } from '@angular/common';
-import { WalletStore } from '@heavy-duty/wallet-adapter';
-import { computedAsync } from 'ngxtension/computed-async';
-import { toSignal } from '@angular/core/rxjs-interop';
 
 /**
  * @title Basic buttons
@@ -30,7 +26,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
                             <a [routerLink]="['']" mat-raised-button>Balance</a>
                         </li>
                         <li>
-                            <a [routerLink]="['settings']" mat-raised-button>Historial</a>
+                            <a [routerLink]="['historial']" mat-raised-button>Historial</a>
                         </li>
                     </ul>
                 </nav>

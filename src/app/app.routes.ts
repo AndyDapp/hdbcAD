@@ -8,7 +8,7 @@ export const appRoutes: Route[] = [
         import('./homepage.component').then((m) => m.HomePageComponent),
 },
 {
-    path: 'settings',
+    path: 'historial',
     loadComponent: () =>
         import('./settingspage.component').then((m) => m.SettingsPageComponent),
 },
