@@ -11,7 +11,10 @@ import { DecimalPipe } from '@angular/common';
     template: `
         <section class="px-14 py-14 bg-white bg-opacity-20">
                 @if(account()) {
-                    <div class="flex justify-center gap-2">
+                    <div class="flex justify-center">   
+                        <h3>Tu balance es:</h3>
+                    </div>
+                    <div class="flex justify-center">
                         <img [src]="account()?.info?.image" class="w-8 h-8" />
                         <p class="text-2xl font-bold">
                             {{ account()?.balance | number }}
